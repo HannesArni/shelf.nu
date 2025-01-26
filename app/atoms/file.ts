@@ -20,11 +20,11 @@ export const validateFileAtom = atom(
           return `Allowed file types are: PNG, JPG or JPEG`;
         }
 
-        if (!allowedSize) {
-          /** Clean the field */
-          event.target.value = "";
-          return "Max file size is 8MB";
-        }
+        // if (!allowedSize) {
+        //   /** Clean the field */
+        //   event.target.value = "";
+        //   return "Max file size is 4MB";
+        // }
 
         return undefined;
       }
